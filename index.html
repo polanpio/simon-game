@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon game</title>
+    <link rel="icon" href="images/simon_icon.png">
+    <link rel="stylesheet" href="fonts/fontawesome-free-5.13.0-web/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+    <div class="main">
+        <div class="buttons">
+            <div onclick="quarterClicked(event.currentTarget)" id="btn-green" class="quarter quarter-green"></div>
+            <div onclick="quarterClicked(event.currentTarget)" id="btn-red" class="quarter quarter-red"></div>
+            <div onclick="quarterClicked(event.currentTarget)" id="btn-yellow" class="quarter quarter-yellow"></div>
+            <div onclick="quarterClicked(event.currentTarget)" id="btn-blue" class="quarter quarter-blue"></div>
+        </div>
+        <div class="cutout">
+            <div class="button-name-wrapper">
+                <div onclick="main()" class="power-button">
+                    <i class="fa fa-power-off" aria-hidden="true"></i>
+                </div>
+                <div class="game-name">simon</div>
+            </div>
+        </div>
+    <!-- </div>
+    <audio id="audio1"><source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"></source></audio>
+    <audio id="audio2"><source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"></source></audio>
+    <audio id="audio3"><source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"></source></audio>
+    <audio id="audio4"><source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"></source></audio>
+    </div> -->
+    <script src="main.js"></script>
+</body>
+</html>
